@@ -12,7 +12,6 @@ internal class Program
     {
 
         var _service = new MainService();
-
         var extractedData = _service.ParseCsvData();
         var filteredData = _service.ProcesData(extractedData);
         _service.DataStorage(filteredData);
